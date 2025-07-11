@@ -1,0 +1,67 @@
+.app-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #0f0f0f;
+  padding: 40px;
+  gap: 60px;
+  flex-direction: row;
+}
+
+.left-section,
+.right-section {
+  flex: 1 1 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.right-logo {
+  width: 320px;
+  height: auto;
+  max-height: 540px;
+  opacity: 0.9;
+  animation: float 4s ease-in-out infinite;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+/* ✅ Mobile view: Spider comes first, then form */
+@media screen and (max-width: 768px) {
+  .app-container {
+    flex-direction: column-reverse;
+    gap: 32px;
+    padding: 20px;
+  }
+
+  .right-logo {
+    width: 340px;
+    max-height: 600px;
+  }
+
+  .left-section {
+    width: 100%;
+  }
+}
+
+/* Hide scrollbar for WebKit browsers */
+body::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for Firefox */
+body {
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+}
