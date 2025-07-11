@@ -31,7 +31,7 @@ A responsive React form designed as part of the Full-Stack Software Engineer ass
 ## 🧪 Running Locally
 
 ```bash
-git clone https://github.com/rahulsp4601/spidr-interest-form
+git clone https://github.com/RahulSP-4601/Spidr.git
 cd spidr-interest-form
 npm install
 npm run dev
